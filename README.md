@@ -1,6 +1,6 @@
-# Client
+# Version
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+Angular version 11.2.2.
 
 ## Development server
 
