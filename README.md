@@ -2,9 +2,13 @@
 
 Angular version 11.2.2.
 
-## Development server
+## Inicio
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Desde la carpeta raiz ejecutar `npm install` para instalar las dependencias necesarias. 
+
+Desde la carpeta raiz ejecutar `ng serve -o` para iniciar. 
+
+El puerto para el cliente es `4200`.
 
 ## Code scaffolding
 
