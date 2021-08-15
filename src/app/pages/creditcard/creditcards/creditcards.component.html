@@ -1,0 +1,11 @@
+<nb-card accent="info">
+    <nb-card-header>
+        <h1>Tarjetas de Crédito </h1>
+      </nb-card-header>
+      <nb-card-body>
+        <ng2-smart-table [settings]="settings" [source]="datacreditcard" #table></ng2-smart-table> 
+      </nb-card-body> 
+</nb-card>
+<div class="offset-sm-11 col-auto mr-auto">
+  <button nbButton (click)="logout()" status="danger">Salir<nb-icon icon="log-out"></nb-icon></button>
+</div>

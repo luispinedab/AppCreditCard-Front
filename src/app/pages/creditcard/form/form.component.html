@@ -1,0 +1,103 @@
+<nb-card>
+    <nb-card-body>
+                <nb-card accent="primary">
+                  <nb-card-header><h4>REGISTRAR TARJETA DE CREDITO</h4></nb-card-header>
+                  <nb-card-body>
+                    <form (ngSubmit)="guardar()" autocomplete="off" [formGroup]="formCreditCard">
+                    <div class="row">
+                        <div class="col-md-6">
+                        <nb-card size="medium">
+                            <nb-card-header><h4>INFORMACIÓN CLIENTE</h4></nb-card-header>
+                            <nb-card-body> 
+                                        <div class="form-inline">
+                                        <div class="form-group row">
+                                            <label  class="label col-sm-3 col-form-label">Nombres Completos:</label>
+                                                <input type="text" nbInput  formControlName="FirstName" placeholder="Nombres Completos">
+                                                <span class="form-text text-danger"
+                                                    *ngIf="campoEsValido('FirstName')"> 
+                                                    El campo es obligatorio
+                                                </span>
+                                        </div>
+                                        </div>
+                                        <div class="form-inline">
+                                            <div class="form-group row">
+                                                <label  class="label col-sm-3 col-form-label">Apellidos:</label>
+                                                <input type="text" nbInput  formControlName="LastName" placeholder="Apellidos">
+                                                <span class="form-text text-danger"
+                                                    *ngIf="campoEsValido('LastName')"> 
+                                                    El campo es obligatorio
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-inline">
+                                            <div class="form-group row">
+                                                <label  class="label col-sm-3 col-form-label">Identificación:</label>
+                                                <input type="text" nbInput  formControlName="Identification" placeholder="Identificación">
+                                                <span class="form-text text-danger"
+                                                        *ngIf="campoEsValido('Identification')"> 
+                                                        El campo es obligatorio
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-inline">
+                                            <div class="form-group row">
+                                                <label  class="label col-sm-3 col-form-label">NickName:</label>
+                                                <input type="text" nbInput  formControlName="Nickname" placeholder="NickName">
+                                                <span class="form-text text-danger"
+                                                            *ngIf="campoEsValido('Nickname')"> 
+                                                            El campo es obligatorio
+                                                    </span>
+                                                        
+                                                </div>
+                                        </div>
+                                        <div class="form-inline">
+                                            <div class="form-group row">
+                                            <label  class="label col-sm-3 col-form-label">Password:</label>
+                                            <input type="text" nbInput  formControlName="Password" placeholder="Password">
+                                            <span class="form-text text-danger"
+                                                        *ngIf="campoEsValido('Password')"> 
+                                                        El campo es obligatorio
+                                                </span>
+                                            </div>
+                                        </div>                                       
+                            </nb-card-body>
+                        </nb-card>
+                        </div>
+                        <div class="col-md-6">
+                            <nb-card size="medium">
+                                <nb-card-header><h4>INFORMACIÓN TARJETA</h4></nb-card-header>
+                                <nb-card-body>
+                                    <div class="form-inline">
+                                        <div class="form-group row">
+                                        <label  class="label col-sm-3 col-form-label">Número de la Tarjeta:</label>
+                                        <input type="text" nbInput  formControlName="Number" placeholder="Número de la Tarjeta">
+                                        <span class="form-text text-danger"
+                                                    *ngIf="campoEsValido('Number')"> 
+                                                    El campo es obligatorio
+                                            </span>
+                                        </div>
+                                    </div>  
+                                    <div class="form-inline">
+                                        <div class="form-group row">
+                                        <label  class="label col-sm-3 col-form-label">CVV:</label>
+                                        <input type="text" nbInput  formControlName="CardValidationValue" placeholder="CVV">
+                                        <span class="form-text text-danger"
+                                                    *ngIf="campoEsValido('CardValidationValue')"> 
+                                                    El campo es obligatorio
+                                            </span>
+                                        </div>
+                                    </div>
+                                </nb-card-body>
+                              <nb-card-footer>
+                                <div class="offset-sm-5 col-auto mr-auto">
+                                  <button nbButton status="success" type="submit">Guardar</button>
+                                </div>
+                              </nb-card-footer>
+                            </nb-card>
+                        </div>
+                    </div>
+                    </form>
+                  </nb-card-body>
+                </nb-card>
+    </nb-card-body>
+</nb-card>
